@@ -1,0 +1,47 @@
+<!-- tasks.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <style>
+        table, tr, td, th {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Task List</h2>
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Priority Level</th>
+            <th>Progress Level</th>
+        </tr>
+
+        <!-- Simulate dynamic content with GET method (this will be dynamic in a server-side environment) -->
+        <tr>
+            <td>
+                <!-- Assume this is filled dynamically using GET data -->
+                <!-- This will be a URL parameter like ?title=Task1 -->
+                <script>document.write(new URLSearchParams(window.location.search).get('title'));</script>
+            </td>
+            <td>
+                <script>document.write(new URLSearchParams(window.location.search).get('description'));</script>
+            </td>
+            <td>
+                <script>document.write(new URLSearchParams(window.location.search).get('category'));</script>
+            </td>
+            <td>
+                <script>document.write(new URLSearchParams(window.location.search).get('priority'));</script>
+            </td>
+            <td>
+                <script>document.write(new URLSearchParams(window.location.search).get('progress'));</script>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
