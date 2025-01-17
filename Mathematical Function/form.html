@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function sumNumbers(event){
+                 event.preventDefault(); // Prevent form submission
+                let num1 = 1;
+                let num2 = 100;
+                let res = (num2 * (num2 + 1)) / 2;
+                console.log(res);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Sum the numbers between 1 and 100</h1>
+        <form>
+            <button type="submit" onclick="sumNumbers(event)"> Submit </button>
+        </form>
+    </body>
+</html>
